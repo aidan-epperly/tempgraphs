@@ -1,0 +1,29 @@
+<h1>
+    Graph!
+</h1>
+
+<!-- Preset vis display areas -->
+<center>
+    <svg class="graph"></svg>
+
+<!-- Load basic D3 and helper scripts -->
+<script src="https://d3js.org/d3.v5.js"></script>
+
+<!-- Load drawing JS -->
+<script type="text/javascript" src="./tempgraph.js"></script>
+
+
+<script>
+    // Global chart standards
+    var stdTotalWidth = 500,
+        stdTotalHeight = 400;
+    var stdMargin = { top: 40, right: 40, bottom: 40, left: 40 },
+        stdWidth = stdTotalWidth - stdMargin.left - stdMargin.right,
+        stdHeight = stdTotalHeight - stdMargin.top - stdMargin.bottom,
+        stdMaxBuffer = 1.07;
+    var stdDotRadius = 4,
+        stdLgndDotRadius = 5,
+        stdLgndSpacing = 20;
+    // Call draw functions
+    draw_line_Temperature('graph');
+</script>
